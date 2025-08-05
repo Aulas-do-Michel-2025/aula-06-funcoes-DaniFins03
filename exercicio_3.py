@@ -8,4 +8,12 @@ Exemplo de uso:
 >>> print(calcular_media([0, 100, 200]))
 >>> 100
 """
+def calcular_media (lista):
+    if len(lista)==0:
+        return 0   
+    soma = 0
+    for numero in lista:
+        soma += numero
+    media = soma / len(lista)
+    return media
 
